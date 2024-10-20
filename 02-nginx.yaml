@@ -13,4 +13,4 @@
       enabled: yes
 
 
-      # ansible-playbook -i inventory.ini -e ansible_user=ec2                                                                -user -e ansible_password=Devops321 02-nginx.yaml
+      # ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=Devops321 02-nginx.yaml
