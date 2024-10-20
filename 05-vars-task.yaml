@@ -1,0 +1,12 @@
+- name: variables
+  hosts: localhost
+  vars:  # variable declaration
+    Course: "Ansible"
+    Stream: "Online"
+    Duration: "120hrs"
+  tasks:
+    - name: print information
+      vars: # Task level variables
+        Course: "Terraform"
+      ansible.builtin.debug:
+        msg: "Hi, I am learning {{Course}} in {{Stream}}, Duration is {{Duration}}."
