@@ -11,3 +11,6 @@
       name: nginx
       state: started
       enabled: yes
+
+
+      # ansible-playbook -i inventory.ini -e ansible_user=ec2                                                                -user -e ansible_password=Devops321 02-nginx.yaml
