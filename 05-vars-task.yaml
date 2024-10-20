@@ -5,8 +5,14 @@
     Stream: "Online"
     Duration: "120hrs"
   tasks:
-    - name: print information
+    - name: print override information
       vars: # Task level variables
         Course: "Terraform"
       ansible.builtin.debug:
         msg: "Hi, I am learning {{Course}} in {{Stream}}, Duration is {{Duration}}."
+
+    - name: print information
+      ansible.builtin.debug:
+        msg: "Hi, I am learning {{Course}} in {{Stream}}, Duration is {{Duration}}."
+
+
